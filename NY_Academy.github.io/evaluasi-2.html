@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NY Academy | Media Pembelajaran Geografi</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+  
+
+    <link href='assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/main.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/animate-custom.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-font.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-modis.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/jQuizMe.css' rel='stylesheet' type='text/css' />
+</head>
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+<div id="navbar-main">
+    
+    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="menuIcon"><i class="fa fa-lg fa-list-ul"></i> Menu</span>
+            </button>
+            <span class="navbar-header"><span class="navbar-brand logoModis"><img src="assets/img/topi.png" width="63" height="46" class="noBayang"></span></span>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+                <li><a href="index.html"><i class="glyphicon glyphicon-home"></i>&nbsp; Home</a></li>
+                <li><a href="pembelajaran.html"><i class="glyphicon glyphicon-book"></i>&nbsp; Pembelajaran</a></li>          
+			   <li><a href="evaluasi-daftar.html"><i class="glyphicon glyphicon-list"></i>&nbsp; Evaluasi</a></li>
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-question-sign"></i>&nbsp; Bantuan<b class="caret"></b></a>			                    
+                	<ul class="dropdown-menu">
+                        <li><a href="info.html"><i class="glyphicon glyphicon-info-sign"></i>&nbsp; Tentang Aplikasi</a></li>
+                        <li><a href="kontak.html"><i class="glyphicon glyphicon-earphone"></i>&nbsp; Kontak Pengambang</a></li>
+                    </ul>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div id="infowrap" class="evaluasiWrap">
+    <div class="container">
+        <div class="row">
+            <h4 class="centered">Evaluasi 2</h4>
+            <div id="quizArea"></div>
+        </div>
+    </div>
+    <br><br><br>
+</div>
+
+<footer id="footerwrapAwal" style="margin-top:-40px;">
+    <div class="container">
+        <p>NOVELA JULIANA</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/retina.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+<script type="text/javascript" src="assets/js/jmodis.js"></script>
+<script type="text/javascript" src="assets/js/jQuizMe-2.2.1.js"></script>
+<script type="text/javascript">
+    $(function($) {
+        var quizMulti = {
+            multiList: [{
+                ques: "Sebutkan nama buku hasil karangan roger Minshull yang berisi mpokok-pokok mengenai pokok-pokok persebaran gejala-gejala dimukabumi",
+                ans: "The changing of geography",
+                ansSel: ["The sciens of geography", "The filosofis of geography", "The politic of geography", "The education  of geography"]
+            }, {
+                ques: "Sebutkan 2 aspek geografi secara umum ",
+                ans: "Fisik dan sosial",
+                ansSel: ["Fisik dan abiotic", "Biotik dan abiotic", "Fisik dan ekologis ", "Biotik dan material"]
+            }, {
+                ques: "Apa yang dimaksud dengan oikumene ",
+                ans: "Suatu bagian dari bumi yang di huni manusia",
+                ansSel: ["Wilayah yang menjadi tempat wisata", "Suatu organisasi dalam politik ", "Suatu organisasi dalam kelompok tani ", "Nama suatu daerah pedalaman "]
+            }, {
+                ques: "Apa Yang Dimaksud Dengan Geopolitik ?",
+                ans: "Ilmu tentang sudut pandang manusia dalam memahami dunia",
+                ansSel: ["Ilmu yang mempelajari politik ", "Ilmu yang mempelajari lingkungan politik ", "Ilmu yang mempelajari tentang batasan berpolitik ", "Semuanya salah "]
+            }, {
+                ques: "Sebutkan pembagian lokasi",
+                ans: "lokasi absolut dan lokasi relative",
+                ansSel: ["lokasi situs dan lokasi relative", "lokasi biotik dan lokasi abiotic ", "lokasi relative dan lokasi fisik ", "lokasi biotikn dan konkret "]
+            } ]
+               
+        },
+
+            options = {
+                animationType: 0,
+                disableDelete: true,
+                showHTML: true,
+                showWrongAns: true,
+                showFeedback: false,
+                showAnsInfo: false,
+                title: "&nbsp;",
+                intro: "Siap untuk memulai evaluasi ?"
+            },
+
+            indonesia = {
+                ans: {
+                    corrAns: "<strong>Jawaban yang benar:</strong>",
+                    praise: "<strong>Anda Benar! :)</strong>",
+                    yourAns: "<strong>Jawaban Anda:</strong>"
+                },
+                btn: {
+                    begin: ["Mulai ->"],
+                    next: ["Lanjut"],
+                    help: [""],
+                    restart: ["Mulai evaluasi lagi?"],
+                    quit: ["&nbsp;"],
+                    quitNo: ["Tidak"],
+                    quitYes: ["Ya"],
+                    details: ["Detail"]
+                },
+                stats: {
+                    right: "Jawaban benar",
+                    wrong: "Jawaban salah",
+                    tried: "Jumlah soal",
+                    score: "Nilai Anda",
+                    rate: "Rating"
+                }
+            };
+
+        options.statusUpdate = function(quizInfo, $quiz) {
+            if (quizInfo.hasQuit && quizInfo.score >= 80) {
+                var berhasil = ("<div class='sudah'>" +
+                    "<h4>Selamat! :)</h4>" +
+                    "<p>Anda telah memenuhi kriteria minimal Lulus. Anda bisa..</p>" +
+                    "<p>" +
+                    "<span class='berhasil'><a href='bab2.html'>lanjut ke Bab selanjutnya &raquo;</a></<span>" +
+                    "</p>" +
+                    "<p>Namun, jika belum puas, Anda bisa mengulang Evaluasi atau Bab 2 ini :)</p>" +
+                    "</div>"
+                );
+                $($quiz).find(".q-extraStat").html(berhasil);
+            } else {
+                $($quiz).find(".q-extraStat").html("<div class='gagal'>" +
+                    "Anda <strong>belum memenuhi</strong> kriteria kelulusan minimal :( <br> Silakan coba evaluasi ini lagi atau Anda bisa mengulang bagian yang belum mengerti pada Bab 1 ini." +
+                    "</div>");
+            }
+        };
+        $("#quizArea").jQuizMe(quizMulti, options, indonesia);
+    });
+</script>
+</body>
+</html>

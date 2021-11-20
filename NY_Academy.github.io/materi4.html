@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NY Academy | Media Pembelajaran Geografi</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+   
+    <link href='assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/main.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/animate-custom.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-font.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-modis.css' rel='stylesheet' type='text/css'>
+    <link href="assets/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen">
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="assets/js/jmodis.js"></script>
+    <script type="text/javascript" src="assets/fancybox/jquery.fancybox.pack.js"></script>
+    <script>
+    $(document).ready(function() {
+        //semua links dengam akhiran ekstensi gambar
+        var thumbnails = 'a[href$=".gif"],a[href$=".jpg"],a[href$=".jpeg"],a[href$=".png"],a[href$=".GIF"],a[href$=".JPG"],a[href$=".JPEG"],a[href$=".PNG"]';
+
+        //menambah class "fancybox" ke thumbnails dan dijadikan satu group "rel" untuk mengaktifkan tombol previous/next
+        jQuery(thumbnails).addClass("fancybox").attr("rel","lightbox");
+
+        //memanggil fancybox
+        jQuery('.fancybox').fancybox({
+            padding: 0,
+            //mendapatkan alt dari img untuk title fancybox
+            beforeShow : function() {
+                var alt = this.element.find('img').attr('alt');
+                this.inner.find('img').attr('alt', alt);
+                this.title = alt;
+            }
+        });
+    });
+    </script>
+</head>
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+<div id="navbar-main">
+    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="menuIcon"><i class="fa fa-lg fa-list-ul"></i> Menu</span>
+            </button>
+        <span class="navbar-brand logoModis"><img src="assets/img/topi.png" width="63" height="46" class="noBayang"></span>        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+                <li><a href="index.html"><i class="glyphicon glyphicon-home"></i>&nbsp; Home</a></li>
+                <li><a href="pembelajaran.html"><i class="glyphicon glyphicon-book"></i>&nbsp; Pembelajaran</a></li>
+                <li><a href="evaluasi-daftar.html"><i class="glyphicon glyphicon-list"></i>&nbsp; Evaluasi</a></li>
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-question-sign"></i>&nbsp; Bantuan<b class="caret"></b></a>			                    
+                	<ul class="dropdown-menu">
+                        <li><a href="info.html"><i class="glyphicon glyphicon-info-sign"></i>&nbsp; Tentang Aplikasi</a></li>
+                        <li><a href="kontak.html"><i class="glyphicon glyphicon-earphone"></i>&nbsp; Kontak Pengambang</a></li>
+                    </ul>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <!--INFO AWAL-->
+	<div id="kbwrap" class="kbwrap01">
+		<div class="row">	
+			<h3 class="centered">Materi Pertemuan 4</h3>
+			<br>
+		</div>
+	</div>
+	
+	<div class="container" id="kb01" name="kb01">
+		<br>
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8">
+			<div class="panel panel-default artikel" id="tujuan">
+				<div class="panel-body"> 
+                	<h3 class="page-header">BAB 4</h3>
+                    <ul>
+                    	<li>Pemunculan Geografi Sosial</li>
+                        <li>Geografi Dan Ekologi Sosial</li>
+                        <li>Ekologi Dan Determinisme Alam: Ratzel, Sample Dan Huntington.</li>
+                        <li>Geografi Prancis: Vidal, Brunhes, Sorre, Le Lannou</li>
+                        <li>Pengertian Kebudayaan</li>
+                    </ul>
+					
+                    <br><p class="gambar-tengah"><a class="btn btn-warning btn-sm smoothScroll" onclick="toggle('uraianMateri');" href="#uraianMateri">Lanjut ke Materi &raquo;</a></p>
+				</div>
+			</div>
+			
+			<div class="panel panel-default artikel" id="uraianMateri" style="display:none;">
+				<div class="panel-body">
+					<h3 class="page-header">Materi</h3>
+                    
+                    <div class="kb-row" id="Jenis-jenis alamat">
+    					<a href="#selukbeluk" class="kb-row-handle">Pemunculan Geografi Sosial</a>
+    					<div class="kb-row-content">
+                            <p style="text-indent: 45px;">•     Manusia Sasaran Telaah</p>
+                            <p style="text-indent: 45px;">Terdapat dua faham mengenai geografi di dalam lingkungan perguruan tinggi luar negeri. Pertama, faham yang mempertahankan geografi sebagai ilmu utuh; kedua, faham yang menghendaki adanya pemisahaan yang tegas antara geografi fisis dan geografi social. Ilmu geografi masuk konsorsium ilmu-ilmu alamiah, tetapi di lingkungan sekolah dasar sampai lanjutan atas maupun di ikip geografi di masukan bidang studi ilmu social. Adapun geografi fisis dan pengatahuan falak di sekolah lanjut di masukkan bidang studi pengatahuan alam denga sebuan Pengatahuan Bumi dan Antartika.</p>
+                            <p style="text-indent: 45px;">Geografi sosial sebagai suatu ilmu sosial memandang manusia sebagai obyek telaahnya, atau dapat di katakan : menempatkan manusia di pusat telaahnya.dasar ini telah ada pada antropologi yaitu ilmu yang mempelajari manusia, dalam arti yang mencari keberaturan yang tersembunyi di dalamnya. Sejak zman KANT antropologi di bagi atas antoprologi fisik yang menelaah jasmani manusia sebaga produk alam dan antropologi pragmatis yang merenungkan prestasi yang terdapat pada manusia sebagai mahkluk yang bebas bertindak.</p>
+                            <p style="text-indent: 45px;">•     Tiga Pandangan Tentang Manusia</p>                  
+                            <p style="text-indent: 45px;">Filsafat antropologi, bagian dari filsafat yang membahas hakekat manusia dan tempatnya di dunia. Berdasarkan ini maka dapat di bedakan adanya tiga tipe filsafat yang bertalian dengan perilaku manusia di dunia kita ini.</p>
+                            <p style="text-indent: 45px;">1	Pandangan Kristen, filsafat ini melihat tempat manusia yang khusus di antara mahkluk-mahkluk lainnya, yakni karena manusia memiliki relasi denga tuhan.</p>
+                            <p style="text-indent: 45px;">2	Filsafat rasionalistis-ideologis, menurut ini keistimewaan manusia terletak pada akal serta budinya. Akibatnya, berbagai kegiatan manusia diarahkan kepada nilai-nilai yang coraknya normatif seperti kebajikan, kesucian, keadilan dan sebagainya.</p>
+                            <p style="text-indent: 45px;">3	Filsafat naturalistis, melihat manusia sekedar sebagai bagian dari alam belaka. Hakekat manusia adalah terutama terletak pada tubuhnya dan kebutuhannya akan pangan, sandang, dan perumahan. Semua kegiatan tertuju akan pertahanan dirinya dan kelestariannya.</p>
+                            <p style="text-indent: 45px;">•     Perjuangan Hidup</p>
+                            <p style="text-indent: 45px;">Geografi Belanda H.J. KEUNING berpendapat bahwa geografi sosial sekarang yang puncaknya dalah geografi ekonomi (yakni yang membahas cara manusia memenuhi kebutuhannya yang materi) berlandaskan filsafat naturalistis itu.Pendekatan geografi sesungguhnya itu di sini: bahwa perjuangan hidup manusia itu dalam bentuk apapun, selalu terikat oleh suatu tempat atau wilayah di permukaan bumi : ini merupakan akibat dari fakta bahwa manusia atau lebih tepatnya kelompok manusia yang bersangkutan bertempat tinggal di wilayah tersebut. Para sosiogegraf cukup mampu menunjukan hubungan yang nyata antara aneka bentuk kemasyarakatan dan lingkungan. Mengenai ini Watson geograf amerika memberikan sorotannya demikian :</p>
+                            <p style="text-indent: 45px;">Sebenarnya ketidaksamaan di bidang ekonomi, sisoal dan politik itu berlatar belakang dua: lingkungan alam dan lingkungan spiritual yang terdiri atas ideology dan keyakinan agama. Di antara dua lingkungan itu bagi para geograf yang kuat adalah yang pertama, mereka tak perlu mengklaimnya sebagai yang mutlak sehingga tergelincir dalam determinisme materlil.</p>
+                                                      
+                        </div>
+    				</div>
+    				
+    				<div class="kb-row" id="Jenis-jenis alamat">
+    					<a href="#bumi" class="kb-row-handle">Geografi Dan Ekologi Sosial</a>
+    					<div class="kb-row-content">
+                            <p style="text-indent: 45px;">Peringatan lanjutnya adalah bahwa di dalam menelaah masyarakat kota para sosio-geograf akan berhadapan dengan para sarjana ekologi sosial, yaitu cabang dari sosialogi yang muncul pada tahun dua puluhan di Amerikat Serikat. Para geograf harus ingat kalau sasaran telaahnya adalah dasar-dasar geografis dari masyarakat. Sosio-geograf itu menaruh minat kepada pengaruh lingkungan terhadap manusia dengan maksud untuk akhirnya untuk memahami adanya perbedaan antara tempat yang satu dan tempat yang lainnya. Dengan demikian mereka dapat melukisakan bumi yang mereka telaah.</p>
+                            <p style="text-indent: 45px;">Sosio-ekolog sasaran telaah mereka adalah masyarakat manusia. Kalau mereka ini para ekologi sosial menelaah pengaruh lingkungan alam atas masyarakat, yang mereka utamakan adalah proses adaptasi itu.karena itu para sosio-geograf selayaknya mengutamakan pola-pola adaptasi manusianya.Watson berusaha memberikan penjelasan yang serupa dengan Hollinghead, tertuju kepada para sosio-geograf dengan gambaran demikian: perbedaan ekologi sosial dan geografi sosial adalah seperti klimatologi dan meteorology.</p>                      
+                            <p style="text-indent: 45px;">Sehubung dengan itu geograf lain Crowe menambahkan bahwa justru karena geografi itu suatu telaah yang dinamis, geografi sudah sepantasnya menelaah lebih dalam dari pola-pola spatial suatu masyarakat yang selalu berubah mengikuti responsmanusia terhadap tantangan lingkungannya.</p>
+                            
+                        </div>
+    				</div>
+                    
+                    <div class="kb-row" id="Jenis-jenis alamat">
+    					<a href="#hakekat" class="kb-row-handle">Ekologi Dan Determinisme Alam: Ratzel, Sample Dan Huntington.</a>
+    					<div class="kb-row-content">
+                            <p style="text-indent: 45px;">•     Ekologi Dan Geografi</p>
+                            <p style="text-indent: 45px;">Di dalam geografi kata determinisme alam dihubungkan dengan taokoh geograf jerman yaitu Friedrich Ratzel padahal sebelum ia Ritter juga pernah memperkenalkan determinisme tetapi ini tidak penting dalam poko pembicaraan teoritis.Dalam kunjungan RATZEL ke benua-benua amerika gejala-gejala sosial amat menarik perhatiannya, sehingga ia ingin menerapkan metode biologis dalam menelaah masyarakat.denga sebutan anthropogeographie.</p>
+                            <p style="text-indent: 45px;">1	Karya Ratzel</p>
+                            <p style="text-indent: 45px;">Ratzel menaruh perhatian pada masalah-masalah baru; hal ini yang mendorong adalah perjumpaannya pada masyarakat primitive di benua amerika. Ratzel pun menggunakan pengertian geografis genre de vie seperti yang di ajukan Vidal. Menurutnya sebgai bentuk adaptasi berbeda pada bangsa primitive dengan bangsa modern. Penduduk yang pindah ke lingkungan lain tidak mengalami perubahan jasmani! Karena ini Ratzel terdorong mempertanyakan lebih dalam : adalah perbedaan secara fisi pada penduduk itu akibat kondisi alam ataukah ras manusia ? akhirnya Ratzel menentukan bahwa perbedaan rasial tak akan mengalami perubahan meskipun yang bersangkutan pindah tempat tinggal.</p>
+                            <p style="text-indent: 45px;">2	Ellen Churchill Semple</p>
+                            <p style="text-indent: 45px;">Semple dalam uraiannya tentang geografi keagamaan menulis ini : “Di bentang-bentang alam yang sifatnya monoton disitulah lahir agama-agama yang monotheistis: di situ pula tuhan di akui sebagai yang maha esa, maha satu tanpa rival, sama seperti posisi pasir di gurun pasir dan rumput di stepa”.</p>
+                            <p style="text-indent: 45px;">3	Ellsworth Huntington</p>
+                            <p style="text-indent: 45px;">Huntington adalah tokoh lain dari determinisme di amerika. Fahamnya tentang determinisme itu di belokannya menjadi suatu teori tentang tantangan : beradaban-peradaban yang besar tidak lahir dalam kondisi-kondisi yang mudah, akan tetapi dalam kondisi yang sulit dan berat. Sebagai contohnya diambilnya venesia : kemajuan kota ini di dorang oleh letaknya tetapi legume hawanya tak sehat, yang menjadi sarang pelarian dan persembunyian para para pengungsi.</p>
+                        </div>
+    				</div> 
+                    <div class="kb-row" id="Jenis-jenis alamat">
+    					<a href="#hakekat" class="kb-row-handle">Geografi Prancis: Vidal, Brunhes, Sorre, Le Lannou</a>
+    					<div class="kb-row-content">
+                            <p style="text-indent: 45px;">1. Vidal De La Blache (1845-1918)</p>
+                            <p style="text-indent: 45px;">Pembalikan arus pemikiran geografis yang melawan environ-mentalisme jerman yang begitu ekstrim (natur-determinisme) di pelopori oleh geograf prancis Vidal De La Blache (1845-1918). Prinsip pertama yang di ajukan Vidal yakni: manusia karena akal budinya mampu mengungguli mahklu-mahkluk yang lain sehingga kemampuannya yang kreatif itu berekspresi nyata di permukaan bumi. Gerograf belanda Keuning menyamakanpembalikan arus pemikiran dalam geografi itu sebagai suatu pembalikan COPER-NICUS: tokoh ilmu falak ini berjasa dengan meyakinkan kita bahwa bukan matahari yang mengililingi bumi, tetapi justru sebaliknya. Untuk geografi pembalikan arus pemikiran berbunyi : bukan alam yang menguasai manusia, tetapi justru sebaliknya Vidal menekankan bahwa posisi manusia yang superior itu adalah berkat teghnologinya. Superioritas ini oleh Vidal tak hanya sebagai tempat manusia individu, teteapi di perluaskan juga pada kelompok manusia. Meski tak secara eksplisit disebutkan, sebenarnya Vidal telah mensugestikan bahwa teghnologi itu hanya organisatoris, yang bagi manusia menghasilkan teghnologi materil dan teghnologi organisatoris yakni cara-caranya menaklukan alam. Dua jenis itu yang disingkatnya civilization.</p>
+                            <p style="text-indent: 45px;">2. Brunhes (1868-1951)</p>
+                            <p style="text-indent: 45px;">Brunhes mengembangkan lebih lanjut faham Vidal yakni: alam itu merupakan sumber dari berbagai kemungkinan yang membantu manusia dalam berjuang hidup. Sehubungan itu manusia menentukan pilihannya atas keanekaragaman kemungkinan yang tersedia.</p>
+                            <p style="text-indent: 45px;">3. Sorre</p>
+                            <p style="text-indent: 45px;">Sepeninggalan VIDAL para geograf memakai bukunya yakni principles de la geographie yang diterbitkan oleh menantunya yakni  geograf Ge Mortonne. Dalam kata pengantar tulisannya : segala analisa dalam buku ini menentukan pada cara melokasikan tipe-tipe serta cara menetukan relasi yang sidatnya local. Itulah sebabnya maka di prancis geografi sosial mengutamakan penelitian wilayah sebagai bentang alam budaya. Sorre dalam menyusun klasifikasi gejala-gejala mengutamakan pokok-pokok pemikiran dalam ekologi sosial: sebagai orang yang menguasai ilmu geografi, sejarah, biologi dan sosiologi. Ia memiliki wawasan yang tepat tentang relasi manusia-lingkungan.</p>
+                            <p style="text-indent: 45px;">4. Le Lannou</p>
+                            <p style="text-indent: 45px;">Menurut LE LANNOU geografi itu ilmu yang menelaah manusia dalam tempat tinggalnya. Dengan demikian karena obyek telaah adalah manusia, maka geografi itu seakan-akan menjadi ilmu sosial. Le Lannou mencoba membagi geografi atas tiga jenis yakni geografi umum, geografi regional, dan geografi terapan. Geografi umum gunanya pertama kali menelaah wilayah seperti kita kenal dengan sebutan geografi fisis. Adapun menelaah wilayah lanjutan dipakai geografi sosial atau terapan dan hasil berupa geografi regional.</p>
+                        </div>
+    				</div> 
+                    <div class="kb-row" id="Jenis-jenis alamat">
+    					<a href="#hakekat" class="kb-row-handle">Pengertian Kebudayaan</a>
+    					<div class="kb-row-content">
+                            <p style="text-indent: 45px;">Adapun menurut para ahli pengertian kebudayaan adalah sebagai berikut: </p>
+                            <p style="text-indent: 45px;">a. 	Menurut E.B. Taylor (1871), Kebudayaan adalah kompleks yang mencakup pengetahuan, kepercayaan, kesenian, moral, hukum, adat istiadat,</p>
+                            <p style="text-indent: 45px;">b. 	Menurut Selo Sumarjan dan Soelaeman Soemardi merumuskan sebagai semua hasil karya, rasa dan cipta masyarakat Menurut Sutan Takdir Alisyahbana, Kebudayaan adalah manifestasi dari cara berpikir.</p>
+                            <p style="text-indent: 45px;">c. 	Menurut Koentjaraningrat, Kebudayaan adalah keseluruhan gagasan dan karya manusia yang harus dibiasakannya dengan belajar beserta keseluruhan dari hasil budi pekertinya,</p>
+                            <p style="text-indent: 45px;">d. 	Menurut A.L. Krober dan C. Kluckhon, bahwa kebudayaan adalah manifestasi atau penjelmaan kerja jiwa manusia dalam arti seluas- luasnya.</p>
+                            <p style="text-indent: 45px;">e. 	Menurut C.A. Van Peursen mengatakan bahwa kebudayaan sebagai manifestasi kehidupan setiap orang, dan kehidupan setiap kelompok orang-orang berlainan dengan hewan-hewan, maka manusia tidak hidup begitu saja ditengah alam, melainkan selalu mengubah alam</p>
+                            <p style="text-indent: 45px;">f. 	Krober dan Kluckhon,kebudayaan terdiri atas berbagai pola, bertingkah laku mantap, pikiran, perasaan dan reaksi yang diperoleh dan terutama diturunkan oleh simbol-simbol yang menyusun pencapaiannya secara tersendiri dari kelompok- kelompok manusia, termasuk di dalamnya perwujudan benda-benda materi, pusat esensi kebudayaan terdiri atas tradisi dan cita-cita atau paham, dan terutama keterikatan terhadap nilai-nilai.</p>
+                            <p style="text-indent: 45px;">•  Unsur- Unsur Kebudayaan</p>
+                            <p style="text-indent: 45px;">Adapun unsur-unsur kebudayaan menurut para ahli adalah sebagai berikut : </p>
+                            <p style="text-indent: 45px;">1. Melville J. Herkovits mengajukan pendapatnya tentang unsur kebudayaan adalah terdiri dari 4 unsur yaitu : alat teknologi, sistem ekonomi, keluarga dan kekuatan politik</p>
+                            <p style="text-indent: 45px;">2. Menurut Bronislaw Malinowski unsur kebudayaan terdiri dari sistem norma, organisasi ekonomi, alat-alat atau lembaga ataupun petugas pendidikan dan organisasi kekuatan</p>
+                            <p style="text-indent: 45px;">3. Menurut C. Kluckhon ada tujuh unsur kebudayaan universal yaitu :Sistem religi, Sistem organisasi kemasyarakatan, Sistem pengetahuan,Sistem mata pencaharian hidup dan sistem ekonomi, Sistem teknologi dan peralatan, Bahasa, Kesenian.</p>
+                            <p style="text-indent: 45px;">•  Orientasi Nilai Budaya</p>
+                            <p style="text-indent: 45px;">Kebudayaan sebagai karya manusia memiliki sistem nilai, menurut C. Kluckhon dalam karyanya variations in value orientation (1961) sistem nilai budaya dalam semua kebudayaan di dunia, secara universal menyangkut lima masalah pokok kehidupan manusia, yaitu: </p>
+                            <p style="text-indent: 45px;">1. Hakekat hidup manusia: hakekat hidup untuk setiap kebudayaan berbeda secara ekstern. Ada yang berusaha untuk memadamkan hidup, ada pula dengan pola-pola kelakuan tertentu.</p>
+                            <p style="text-indent: 45px;">2. Hakekat karya manusia: setiap kebudayaan hakekatnya berbeda-beda, untuk hidup, kedudukan/kehormatan, gerak hidup untuk menambah karya.</p>
+                            <p style="text-indent: 45px;">3. Hakekat waktu manusia: hakekat waktu untuk setiap kebudayaan berbeda, orientasi masa lampau atau untuk masa kini.Hakekat alam manusia: ada kebudayaan yang menganggap manusia harus mengeksploitasi alam, ada juga yang harus harmonis dengan alam atau manusia menyerah kepada alam.</p>
+                            <p style="text-indent: 45px;">4. Hakekat hubungan manusia: mementingkan hubungan antar manusia baik vertikal maupun horizontal (orientasi pada tokoh-tokoh). Ada pula berpandangan individualistis</p>
+                            <p style="text-indent: 45px;">•  Perubahan Kebudayaan</p>
+                            <p style="text-indent: 45px;">Terjadinya gerak perubahan kebudayaan ini disebabkan oleh :Sebab-sebab yang berasal dari dalam masyarakat dan kebudayaan sendiri misalnya: perubahan jumlah dan komposisi penduduk.Sebab-sebab perubahan lingkungan alam dan fisik tempat mereka hidup.Faktor Yang Mempengaruhi Diterima Atau Tidaknya Suatu Unsur Kebudayaan Baru, Diantaranya :</p>
+                            <p style="text-indent: 45px;">• Terbatasnya masyarakat memiliki hubungan atau kontak dengan kebudayaan dan dengan orang-orang yang berasal dari luar masyarakat tersebut</p>
+                            <p style="text-indent: 45px;">• Pandangan hidup dan nilai-nilai yang dominan dalam suatu kebudayaan ditentukan oleh nilai-nilai agama</p>
+                            <p style="text-indent: 45px;">•	Corak struktur sosial suatu masyarakat turut menentukan proses penerimaan kebudayaan baru</p>
+                            <p style="text-indent: 45px;">•	Suatu unsur kebudayaan diterima jika sebelumnya sudah ada unsur-unsur kebudayaan yang menjadi landasan bagi diterimanya unsur kebudayaan yang baru tersebut</p>
+                            <p style="text-indent: 45px;">•	Apabila unsur baru itu memiliki skala kegiatan yang terbatas, dan dapat dengan mudah dibuktikan kegunaannya oleh warga masyarakat yang bersangkutan.</p>
+                            <p style="text-indent: 45px;">•  Kaitan Manusia Dan Kebudayaan</p>
+                            <p style="text-indent: 45px;">Proses dialektis ini tercipta melalui tiga tahap yaitu :</p>
+                            <p style="text-indent: 45px;">1. Eksternalisasi, proses dimana manusia mengekspresikan dirinya dengan membangun dunianya</p>
+                            <p style="text-indent: 45px;">2. Obyektivasi, proses dimana masyarakat menjadi realitas obyektif, yaitu suatu kenyataan yang terpisah dari manusia dan berhadapan dengan manusia,</p>
+                            <p style="text-indent: 45px;">3. Internalisasi, proses dimana masyarakat disergap kembali oleh manusia. Maksudnya bahwa manusia mempelajari kembali masyarakatnya sendiri agar dia dapat hidup dengan baik.</p>
+                        </div>
+    				</div><!-- kb-row-container-->
+    				
+                    <br><hr><br><p class="gambar-tengah"><a class="btn btn-warning btn-sm smoothScroll" onclick="toggle('rangkuman');" href="#rangkuman">Lanjut ke Rangkuman &raquo;</a></p>
+    			</div>
+    		</div>
+
+    		<div class="panel panel-default artikel" id="rangkuman" style="display:none;">
+				<div class="panel-body">  
+					<h3 class="page-header">Rangkuman</h3>
+                    <p style="text-indent: 45px;">Geografi yang semulanya disebut ilmu bumi, sebagai pengetahuan diajarkan di Perguruan Tinggi dengan sebutan geografi akademis dan di sekolah dasar sampai sekolah lanjutan atas dengan sebutan geografi sekolah atau geografi pengajaran. Sebutan ilmu bumi disebut sekarang kurang tepat; ilmu bumi lebihlah cocok untuk geologi (dari kata Yunani,geos dan logos),yakni suatu pengetahuan alam yang mempelajari bumi seutuhnya,dari kulit luar sampai intinya,tetapi tanpa memperhatikan hubungan bumi secara khusus dengan manusia yang mengetahuinya.</p>
+                    <p style="text-indent: 45px;">Aristoteles (filsafat Yunani kuno) misalnya, melalui pemikiran dan penelitiannya, dia menyimpulkan bahwa bumi itu bulat. Teori itulah yang mendasari penelitian-penelitian berikutnya. Dia juga meneliti berbagai macam spesies yang ada di Bumi, termasuk manusia. Bermula dari pemikiran bagaimana bentuk Bumi, lalu munculah pertanyaan, "Apakah ada makhluk lain di luar planet Bumi?". Pada akhirnya, dengan semakin berkembangnya ilmu pengetahuan dan teknologi, manusia mencari cara untuk pergi ke luar angkasa.</p>
+                    <p style="text-indent: 45px;">Terciptalah alat yang dapat membawa manusia ke tempat asing tersebut yang kemudian kita kenal sebagai 'roket'. Berbagai teori tentang planet dan makhluk yang mungkin berada di luar planet Bumi mulai menghantui manusia.Tidak jarang manusia mempercayai makhluk luar angkasa atau yang biasa kita kenal sebagai 'alien'. Namun, pada kenyataannya manusia belum bisa menemukan planet yang dihuni oleh 'alien' tersebut. Lalu mengapa hanya Bumi yang dapat ditinggali oleh makhluk hidup seperti kita di sistem tata surya? Selain itu sejak pertengahan abad ke-19, umat Islam menghadapi tantangan hebat, bukan hanya terbatas dalam bidang politik atau militer, tetapi meluas hingga meliputi bidang sosial dan budaya.</p>
+                    <p style="text-indent: 45px;">Selanjutnya faktor- faktor geografis adalah faktor Lokasi,jenis iklim, bentuk relief, jenis tanah, jenis flora dan fauna,kondisi air, sumber mineral,kontak dengan lautan. </p>
+                                    
+                    <br><hr><br><p class="gambar-tengah"><a class="btn btn-primary btn-sm smoothScroll" href="evaluasi-4.html">Lanjut ke Evaluasi &raquo;</a></p>
+    			</div>
+    		</div>	
+			</div><!-- col-md-offset-2 col-md-8 -->
+			<a href="#" class="back-to-top"><i class="fa fa-arrow-circle-o-up"></i> <br> ke atas</a>
+		</div><!-- row -->
+	</div><!-- kb02 --> 	
+  		
+	<div id="footerwrap">
+		<div class="container">
+			<p>NOVELA JULIANA</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/retina.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NY Academy | Media Pembelajaran Geografi</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+   
+    <link href='assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/main.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/animate-custom.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-font.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-modis.css' rel='stylesheet' type='text/css'>
+    <link href="assets/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen">
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="assets/js/jmodis.js"></script>
+    <script type="text/javascript" src="assets/fancybox/jquery.fancybox.pack.js"></script>
+    <script>
+    $(document).ready(function() {
+        //semua links dengam akhiran ekstensi gambar
+        var thumbnails = 'a[href$=".gif"],a[href$=".jpg"],a[href$=".jpeg"],a[href$=".png"],a[href$=".GIF"],a[href$=".JPG"],a[href$=".JPEG"],a[href$=".PNG"]';
+
+        //menambah class "fancybox" ke thumbnails dan dijadikan satu group "rel" untuk mengaktifkan tombol previous/next
+        jQuery(thumbnails).addClass("fancybox").attr("rel","lightbox");
+
+        //memanggil fancybox
+        jQuery('.fancybox').fancybox({
+            padding: 0,
+            //mendapatkan alt dari img untuk title fancybox
+            beforeShow : function() {
+                var alt = this.element.find('img').attr('alt');
+                this.inner.find('img').attr('alt', alt);
+                this.title = alt;
+            }
+        });
+    });
+    </script>
+</head>
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+<div id="navbar-main">
+    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="menuIcon"><i class="fa fa-lg fa-list-ul"></i> Menu</span>
+            </button>
+        <span class="navbar-brand logoModis"><img src="assets/img/topi.png" width="63" height="46" class="noBayang"></span>        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+                <li><a href="index.html"><i class="glyphicon glyphicon-home"></i>&nbsp; Home</a></li>
+                <li><a href="pembelajaran.html"><i class="glyphicon glyphicon-book"></i>&nbsp; Pembelajaran</a></li>
+                <li><a href="evaluasi-daftar.html"><i class="glyphicon glyphicon-list"></i>&nbsp; Evaluasi</a></li>
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-question-sign"></i>&nbsp; Bantuan<b class="caret"></b></a>			                    
+                	<ul class="dropdown-menu">
+                        <li><a href="info.html"><i class="glyphicon glyphicon-info-sign"></i>&nbsp; Tentang Aplikasi</a></li>
+                        <li><a href="kontak.html"><i class="glyphicon glyphicon-earphone"></i>&nbsp; Kontak Pengambang</a></li>
+                    </ul>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <!--INFO AWAL-->
+	<div id="kbwrap" class="kbwrap01">
+		<div class="row">	
+			<h3 class="centered">Materi Pertemuan 1</h3>
+			<br>
+		</div>
+	</div>
+	
+	<div class="container" id="kb01" name="kb01">
+		<br>
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8">
+			<div class="panel panel-default artikel" id="tujuan">
+				<div class="panel-body"> 
+                	<h3 class="page-header">BAB 1</h3>
+                    <ul>
+                    	<li>Seluk Beluk Geografi</li>
+                        <li>Bumi Sebagai Tempat Tinggal Manusia</li>
+                        <li>Hubungan Timbal Balik Bumi dan Manusia</li>
+                        <li>Faktor – Faktor Geografis</li>
+                        <li>Hakekat Geografis</li>
+                    </ul>
+					
+                    <br><p class="gambar-tengah"><a class="btn btn-warning btn-sm smoothScroll" onclick="toggle('uraianMateri');" href="#uraianMateri">Lanjut ke Materi &raquo;</a></p>
+				</div>
+			</div>
+			
+			<div class="panel panel-default artikel" id="uraianMateri" style="display:none;">
+				<div class="panel-body">
+					<h3 class="page-header">Materi</h3>
+                    
+                    <div class="kb-row" id="Jenis-jenis alamat">
+    					<a href="#selukbeluk" class="kb-row-handle">Seluk Beluk Geografi</a>
+    					<div class="kb-row-content">
+                            <p style="text-indent: 45px;">Geografi yang semulanya disebut ilmu bumi, sebagai pengetahuan diajarkan di Perguruan Tinggi dengan sebutan geografi akademis dan di sekolah dasar sampai sekolah lanjutan atas dengan sebutan geografi sekolah atau geografi pengajaran. Sebutan ilmu bumi disebut sekarang kurang tepat; ilmu bumi lebihlah cocok untuk geologi (dari kata Yunani,geos dan logos),yakni suatu pengetahuan alam yang mempelajari bumi seutuhnya,dari kulit luar sampai intinya,tetapi tanpa memperhatikan hubungan bumi secara khusus dengan manusia yang mengetahuinya.Pengajaran geografi yang diadakan sebenarnya mengandung dua tujuan :</p>
+                            <p style="text-indent: 45px;">•	Tujuan materiil yang artinya mempelajari hal-hal untuk diketahui belaka sehingga untuk jenis ini dibutuhkan latihan mengingat.</p>
+                            <p style="text-indent: 45px;">•	Tujuan formal yang mengandung pengembangan daya cipta,latihan sikap pribadi dan kesediaan melayani masyarakat.</p>
+                            <p style="text-indent: 45px;">Hal ini semua bertalian erat dengan didaktik dan metodik khusus geografi yang perlu diketahui oleh para guru geografi.Geografi memandang bumi sebagai habitat manusia yaitu tempat tinggal manusia. Habitat ini terdiri atas bingkai alami (human setting atau cultural setting). Jelas bahwa geografi tak hanya mempelajari aspek alami dari bumi saja akan tetapi juga aspek manusiawi ,baik yang bercorak ekonomis,sosiologis,politis,cultural dan religius. Semua itu dipelajari dengan latar belakang lingkungan alam.</p>                  
+    					</div>
+    				</div>
+    				
+    				<div class="kb-row" id="Jenis-jenis alamat">
+    					<a href="#bumi" class="kb-row-handle">Bumi Sebagai Tempat Tinggal Manusia</a>
+    					<div class="kb-row-content">
+                            <p style="text-indent: 45px;">Bumi. Kita kenali sebagai tempat tinggal berbagai macam makhluk hidup antara lain manusia, hewan, dan tumbuhan. Entah sejak kapan 'bola dunia' ini tercipta di alam semesta. Saat ini kita berada di tahun 2000-an. Namun, sejatinya bumi kita tentu telah tercipta jauh sebelum itu, jutaan atau bahkan milyaran tahun yang lalu. Penelitian tentang bumi dimulai sejak lama.</p>
+                            <p style="text-indent: 45px;">Aristoteles (filsafat Yunani kuno) misalnya, melalui pemikiran dan penelitiannya, dia menyimpulkan bahwa bumi itu bulat. Teori itulah yang mendasari penelitian-penelitian berikutnya. Dia juga meneliti berbagai macam spesies yang ada di Bumi, termasuk manusia. Bermula dari pemikiran bagaimana bentuk Bumi, lalu munculah pertanyaan, "Apakah ada makhluk lain di luar planet Bumi?". Pada akhirnya, dengan semakin berkembangnya ilmu pengetahuan dan teknologi, manusia mencari cara untuk pergi ke luar angkasa.</p>                      
+                            <p style="text-indent: 45px;">Terciptalah alat yang dapat membawa manusia ke tempat asing tersebut yang kemudian kita kenal sebagai 'roket'. Berbagai teori tentang planet dan makhluk yang mungkin berada di luar planet Bumi mulai menghantui manusia.Tidak jarang manusia mempercayai makhluk luar angkasa atau yang biasa kita kenal sebagai 'alien'. Namun, pada kenyataannya manusia belum bisa menemukan planet yang dihuni oleh 'alien' tersebut. Lalu mengapa hanya Bumi yang dapat ditinggali oleh makhluk hidup seperti kita di sistem tata surya? Selain itu sejak pertengahan abad ke-19, umat Islam menghadapi tantangan hebat, bukan hanya terbatas dalam bidang politik atau militer, tetapi meluas hingga meliputi bidang sosial dan budaya.</p>
+                            <p style="text-indent: 45px;">Tantangan ini memberikan pengaruh yang sangat besar dalam pandangan hidup serta pemikiran golongan besar umat Islam. Di sana-sini mereka melihat kekuatan Barat dan kemajuan ilmu pengetahuan yang ditandai dengan adanya kemajuan di bidang ilmu pengetahuan itu sendiri yang bersifat ilmiyah sehingga banyak penemuan-penemuan  dan  teori-teori ilmiyah berkembang begitu pesatnya.</p>
+                            <p style="text-indent: 45px;">Maka dua hal inilah yang menjadikan tema ini dirasa penting untuk dibahas guna :</p>
+                            <p style="text-indent: 45px;">•	Mencoba meruntuhkan filsafat dan  paham materialis yang menjadi landasan bagi kauma atheis dalam berargumen bahwasana bumi dan seisinya serta segala bentuk kesimbangan  ini, tercipta akibat dari sebuah kebetulan belaka .</p>
+                            <p style="text-indent: 45px;">•	Menjawab tantangan perkembangan ilmu pengetahuan. Bahwa al-Quran adalah kitab suci yang tiada keraguan di dalamnya yang bisa diterima di setiap zaman dan dimanapun.</p>
+                        </div>
+    				</div>
+                    <div class="kb-row" id="Jenis-jenis alamat">
+    					<a href="#hubungan" class="kb-row-handle">Hubungan Timbal Balik Bumi dan Manusia</a>
+    					<div class="kb-row-content">
+                            <p style="text-indent: 45px;">Definisi geografi jumlahnya banyak. Geografi adalah hubungan timbal balik antara bumi dan manusia. Bumi dan manusia disitu dapat di tafsirkan sebagai alam dan manusia, atau lingkungan alam dan penduduk. Manusia disitu bukanlah manusia sebagai individu melainkan sebagai kelompok, karena adaptasinya terhadap lingkungan alamnya dilaksanakan secara kreatif. Misalnya sebagai penghuni desa, penduduk wilayah, sebagai bangsa.</p>
+                            <p style="text-indent: 45px;">Hubungan timbal balik manusia dengan bumi sangat ditentukan oleh kemampuan manusia dan alam sesuai karakternya masing-masing. Keduanya memerlukan hubungan timbal balik secara berkelanjutan. Melalui pengelolaan lingkungan hidup secara bijaksana selain dapat menyelamatkan dan melestarikan lingkungan hidup, juga dapat menjamin kebutuhan dan kemakmuran umat manusia itu sendiri. Oleh karenanya. disadari atau tidak, keseimbangan dalam lingkungan kehidupan manusia dan lingkungan alam dapat terganggu karena ulah manusia itu sendiri.</p>    
+                            <p style="text-indent: 45px;">Melalui Al-Qur’an,ajaran islam,dan pengetahuan lingkungan hidup dapat dipupuk hubungan timbal balik (komunikasi) agar manusia dapat saling mengerti, baik bagi dirinya maupun terhadap alam sekitar sesuai dengan amanah sang pencipta, dimana tanda-tanda kebesaran dan kekuasaannya dapat dilihat dari keserasian dan keseimbangan yang luar biasa dalam pelaksanaan sunatullah atau hukum-hukum alam.</p>     
+    					</div>
+    				</div>
+                    
+                    <div class="kb-row" id="Jenis-jenis alamat">
+    					<a href="#faktor" class="kb-row-handle">Faktor – Faktor Geografis</a>
+    					<div class="kb-row-content">
+                            <p style="text-indent: 45px;">Faktor geografis adalah jenis-jenis di dalam faktor alam yang mempunyai pertalian langsung atau tak langsung dengan kehidupan manusia dalam arti memberikan fasilitas kepadanya  untuk menghuni permukaan bumi sebagai wilayah (N. Daldjoeni, 2015 :22). Menurut N. Daldjoeni terdapat delapan faktor geografis yang mempengaruhi kehidupan manusia yaitu : relasi ruang (lokasi, posisi, bentuk, luas, jarak); relief atau topografi (tinggi rendahnya di permukaan bumi); jenis tanah; flora dan fauna; air tanah dan kondisi pembuangan air; sumber-sumber mineral (barang tambang); dan relasi dengan lautan.</p>
+                            <p style="text-indent: 45px;">a. 	Lokasi</p>
+                            <p style="text-indent: 45px;">Merupakan suatu tempat dalam suatu wilayah penting. Demikian ada unsur relasi keruangan yang lain seperti posisinya, jaraknya dari tempat lain. Lokasi itu sendiri memiliki luas serta bentuk yang ada artinya bagi persatuan bangsa, perkembangan ekonomi atau kontak dengan wilayah lain secara kultural maupun politik. Suatu negara yang lokasinya baik bagi perniagaan dunia atau strategi perang dapat saja dengan mudah terancam oleh berbagai bencana perang.</p>
+                            <p style="text-indent: 45px;">b. 	Jenis Iklim</p>
+                            <p style="text-indent: 45px;">Jenis iklim dapat menentukan hasil pertanian. Daerah tropis yang baik untuk perkebunan</p>
+                            <p style="text-indent: 45px;">•	Bentuk Relief</p>
+                            <p style="text-indent: 45px;">Bentuk relief juga mempengaruhui bentuk pelaksanan pengakutan. Perbedaan relief yang menonjol juga menentukan perbedaan suhu tahunan, keindahan tamasya dan pembuangan air (adanya rawa-rawa, danau, bendungan)</p>
+                            <p style="text-indent: 45px;">•	Tipe Tanah</p>
+                            <p style="text-indent: 45px;">Tipe tanah menentukan kesuburan wilayah, tanah berkapur melahirkan daerah yang penduduknya yang miskin dan kurang. Tanah yang  subur mendasari kepadatan penduduk yang dapat membawa berbagai masalah.</p>
+                            <p style="text-indent: 45px;">c. 	Jenis Flora dan Fauna</p>
+                            <p style="text-indent: 45px;">Faktor ini juga mempengaruhui kegiatan ekonomi manusia serta mutu pangannya. Seperti Maluku dengan kekayaan lautannya dan tanaman sagunya.</p>
+                            <p style="text-indent: 45px;">•	Kondisi Air</p>
+                            <p style="text-indent: 45px;">Faktor ini juga menentukan dapat tidaknya suatu wilayah dihuni ddengan baik sehingga merupakan kunci bagi lahirnya peradaban manusia.</p>
+                            <p style="text-indent: 45px;">•	Sumber – Sumber Mineral</p>
+                            <p style="text-indent: 45px;">Sumber mineral merupakan segala pontensi alam berupa bahan galian yang terdapat pada perut bumi yang diperoleh melalui peroses pertambangan (ekspolasi). Indonesia adalah negara dengan bahan mineral baik yangterdapat didaratan atau didasar laut sebab kondisi geografi yang sangat mendukung. Persebaran jumlah dan jenis sumber daya meniral tidak merata, hal ini tergantung kepada faktor kondisi pada setiap daerah.</p>
+                            <p style="text-indent: 45px;">d. 	Kontak Dengan Lautan</p>
+                            <p style="text-indent: 45px;">Kontak dengan lautan ini sangat penting bagi peradaban manusia. Daerah yang berada di persisir lebih cenderung maju, karena di sana terjadi interaksi dengan wilayah-wilayah lainnya.
+                                Dalam ilmu geografi untuk membedakan faktor-faktor geografis dapat dikenali melalui unsur-unsur lingkungan. Unsur-unsur lingkungan tersebut meliputi :
+                                </p>
+                                <p style="text-indent: 45px;">•	Unsur-unsur fisis seperti cuaca, iklim, relief, tanah, mineral, air tanah, samudera, dan sebagainya</p>
+                                <p style="text-indent: 45px;">•	Unsur-unsur biotis seperti tumbuhan, hewan, dan mikroorganisme (jasad renik)</p>
+                                <p style="text-indent: 45px;">•	Unsur-unsur teknis seperti pergedungan, jaringan jalan, alat transportasi, dan komunikasi</p>
+                                <p style="text-indent: 45px;">•	Unsur-unsur abstrak seperti bentuk (persegi, bulat, memanjang) , luas wilayah, lokasi tempat, dan jarak antar tempat.</p>
+                                <p style="text-indent: 45px;">Faktor-faktor geografis yang memengaruhi dan menentukan keberagaman budaya di Indonesia :</p>
+                                <p style="text-indent: 45px;">1.	Letak Geografis</p>
+                                <p style="text-indent: 45px;">Letak atau lokasi suatu tempat sangat berpengaruh pada kebiasaan hidup suatu masyarakat. Masyarakat yang tinggal di pegunungan seperti Bromo misalnya, mereka akan cenderung bermata pencaharian sebagai petani. Sedangkan untuk masyarakat yang tinggal di daerah pantai seperti Pangandaran biasanya berprofesi sebagai nelayan.Contoh lainnya misalnya tempat tinggal masyarakat tersebut. Masyarakat yang tinggal di gunung, untuk membuat rumah mereka hangat, maka mereka membuat atap yang tidak terlalu tinggi. Sedangkan untuk masyarakat yang tinggal di pantai, mereka membuat atap setinggi mungkin untuk mencegah kegerahan disiang hari yang panas</p>
+                                <p style="text-indent: 45px;">2.	Posisi Strategis</p>
+                                <p style="text-indent: 45px;">Posisi Indonesia yang dilalui oleh Selat Malaka dan menjadi jalur perdagangan internasional sejak zaman dahulu, juga memengaruhi kebudayaan masyarakat Indonesia. Dengan datangnya bangsa asing dan bertemu dengan penduduk lokal, memungkinkan adanya penggabungan kebudayaan.</p>
+                                <p style="text-indent: 45px;">Kondisi Ekologi</p>
+                                <p style="text-indent: 45px;">Ekologi dalam hal ini menitikberatkan pada hubungan antara manusia dan lingkungan, dalam kaitannya dengan keberagaman suku bangsa dan budaya di Indonesia. Faktor ekologis memiliki pengaruh penting. Misalnya suku Baduy yang membangun rumah secara berhadapan dan hanya menghadap ke arah Utara dan Selatan saja. Hal ini dilakukan dengan maksud supaya sinar matahari dapat menyinari seluruh ruangan melalui jendela samping rumah.</p>
+                            </div>
+    				</div>
+    				
+    				<div class="kb-row" id="Jenis-jenis alamat">
+    					<a href="#hakekat" class="kb-row-handle">Hakekat Geografi</a>
+    					<div class="kb-row-content">
+                            <p style="text-indent: 45px;">Istilah Geografi berasal dari bahasa Yunani geo yang artinya bumi dan graphien yang artinya pencitraan. Geografi adalah ilmu pengetahuan yang menggambarkan segala sesuatu yang ada di permukaan bumi. Hakikat Geografi adalah mempelajari gejala-gejala di permukaan bumi secara keseluruhan dengan memperhatikan tiap-tiap gejala secara teliti (yang merupakan bagian dari keseluruhan tadi) dalam hubungan interaksi-interaksi integrasi keruangan.</p>
+                            <p style="text-indent: 45px;">Salah satu bentuk kongkrit dari kajian geografi adalah mempelajari tentang fenomena keberadaan dan kegiatan perekonomian, manusia hidup saling membutuhkan dan beinteraksi, tidak mungkin manusia hidup tanpa berhubungan dengan sekitarnya, karena kelangsungan hidup manusia memerlukan usaha untuk memenuhi kebutuhannya (Nursid Sumaatmadja, 1988).</p>
+                            <p style="text-indent: 45px;">Kalau kita perhatikan beberapa definisi/pengertian dan sejarah perkembangan dari geografi tersebut, ternyata pengertian geografi selalu mengalami perkembangan. Namun kalau kita kaji lebih jauh, di antara pandangan para ahli tersebut tampak ada kesamaan titik pandang. Kesamaan titik pandang tersebut adalah mengkaji:</p>
+                            <p style="text-indent: 45px;">1.	Bumi sebagai tempat tinggal;</p>
+                            <p style="text-indent: 45px;">2.	Hubungan manusia dengan lingkungannya (interaksi);</p>
+                            <p style="text-indent: 45px;">3.	Dimensi ruang dan dimensi historis; dan</p>
+                            <p style="text-indent: 45px;">4.	Pendekatannya, spasial (keruangan), ekologi (kelingkungan) dan regional (kewilayahan).</p>
+                                                  
+    					</div>
+    				</div><!-- kb-row-container-->
+    				
+                    <br><hr><br><p class="gambar-tengah"><a class="btn btn-warning btn-sm smoothScroll" onclick="toggle('rangkuman');" href="#rangkuman">Lanjut ke Rangkuman &raquo;</a></p>
+    			</div>
+    		</div>
+
+    		<div class="panel panel-default artikel" id="rangkuman" style="display:none;">
+				<div class="panel-body">  
+					<h3 class="page-header">Rangkuman</h3>
+                    <p style="text-indent: 45px;">Roger Minshull yang dalam bukunya The changing of geography menderetkan pokok-pokok yang perlu dipahami oleh para geograf ,yaitu :</p>
+                    <p style="text-indent: 45px;">1. 	Persebaran gejala-gejala di muka bumi.</p>
+                    <p style="text-indent: 45px;">2. 	Hubungannya dengan gejala lain di tempat atau wilayah yang bersangkutan.</p>
+                    <p style="text-indent: 45px;">3. 	Hubungannya dengan gejala di tempat atau wilayah lain.</p>
+                    <p style="text-indent: 45px;">4. 	Efek satu atau lebih gejala atas yang lain.</p>
+                    <p style="text-indent: 45px;">5. 	Bervariasinya gejala dari tempat ke tempat.</p>
+                    <p style="text-indent: 45px;">6. 	Mengapa gejala ada di tempat tertentu,dan di tempat lain tidak ada.</p>
+                    <p style="text-indent: 45px;">7. 	Pembauran gejala spatial.</p>
+                    <p style="text-indent: 45px;">8. 	Gerakan gejala yang bertimbal balik.</p>
+                    <p style="text-indent: 45px;">9. 	Mengapa gejala munculnya tak teratur.</p>
+                    <p style="text-indent: 45px;">10.   Bentuk jaringan aneka gejala.</p>
+                    <p style="text-indent: 45px;">11.   Kepadatan dan pengelompokan gejala .</p>
+                    <p style="text-indent: 45px;">12.   Lokasi dan lokalisasi gejala.</p>
+                    <p style="text-indent: 45px;">13.   Pembatasan adanya penduduk dan kegiatannya di suatu tempat .</p>
+                    <p style="text-indent: 45px;">14.    Efek dari kegiatan di suatu tempat terhadap tempat lain.</p>
+                    <p style="text-indent: 45px;">Geografi kependudukan pada dasarnya bersifat kuantitatif,karena sama-sama tergantung dari data statistik . Tetapi keduanya menggunakan pendekatan kualitatif. Para demograf menguji berbagai kualitas fisik,intelektual,dan watak penduduk untuk mengemukakan hubungannya dengan aspek kuantitatif,tetapi para geograf mengusahakan penguraian interelasi antara lingkungan alam dan lingkungan manusia yang rumit.</p>
+                    <p style="text-indent: 45px;">Konsep dasar geografi adalah gabungan 10 konsep yang bertujuan untuk menjelaskan hal-hal yang terjadi di bumi dari sudut pandang geografis. Konsep ini menjadi landasan bagi pembelajaran dan sarana analisis bagi para praktisi geografi, baik di laboratorium maupun di lapangan.</p>
+                    <br><hr><br><p class="gambar-tengah"><a class="btn btn-primary btn-sm smoothScroll" href="evaluasi-1.html">Lanjut ke Evaluasi &raquo;</a></p>
+    			</div>
+    		</div>	
+			</div><!-- col-md-offset-2 col-md-8 -->
+			<a href="#" class="back-to-top"><i class="fa fa-arrow-circle-o-up"></i> <br> ke atas</a>
+		</div><!-- row -->
+	</div><!-- kb02 --> 	
+  		
+	<div id="footerwrap">
+		<div class="container">
+			<p>NOVELA JULIANA</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/retina.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+  </body>
+</html>
